@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 79 70 229;
+    --color-secondary: 107 114 128;
+    --color-background: 243 244 246;
+    --color-foreground: 17 24 39;
+    --color-card: 255 255 255;
+    --color-card-foreground: 17 24 39;
+  }
+
+  .dark {
+    --color-primary: 99 102 241;
+    --color-secondary: 156 163 175;
+    --color-background: 17 24 39;
+    --color-foreground: 243 244 246;
+    --color-card: 31 41 55;
+    --color-card-foreground: 229 231 235;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}
